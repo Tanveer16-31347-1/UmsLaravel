@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\DB;
 class LoginController extends Controller
 {
 	public function index(){
-		return view('login.index');
+		return view('page.login.login');
 	}
 
 	public function valid(Request $req){

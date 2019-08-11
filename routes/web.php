@@ -15,9 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/welcome', function () {
-   	return view('index');
-});
+Route::get('/welcome', 'PageController@index');
+Route::get('/page/admin', 'PageController@admin');
+Route::get('/page/login', 'PageController@login');
+//Route::get('/page/user', 'PageController@user');
 
 //Route::get('/login', ["uses"=>"LoginController@index"]);
 Route::get('/login', 'LoginController@index')->name('login.index');
