@@ -12,7 +12,7 @@ class pageController extends Controller
     public function admin(){
     	return view('page.admin');
     } public function login(){
-    	return view('page.login');
+    	return view('page.login.login');
     }
     
 }

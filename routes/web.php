@@ -15,14 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/welcome', 'PageController@index');
+//Route::get('/', 'PageController@home');
+//Route::get('/page/login', 'PageController@login');
 Route::get('/page/admin', 'PageController@admin');
-Route::get('/page/login', 'PageController@login');
+
 //Route::get('/page/user', 'PageController@user');
 
 //Route::get('/login', ["uses"=>"LoginController@index"]);
 Route::get('/login', 'LoginController@index')->name('login.index');
 Route::post('/login', 'LoginController@valid');
+
+Route::get('/portal','portalController@index')->name('portal.index');
 
 Route::get('/home', 'HomeController@index')->name('home.index');
 Route::get('/home/details/{sid}', 'HomeController@details')->name('home.details');

@@ -20,7 +20,7 @@ class HomeController extends Controller
     public function index(Request $req){
 
         if($this->sessionCheck($req)){
-            return view('home.index');
+            return view('page.home.home');
         }else{
             return redirect()->route('login.index');
         }

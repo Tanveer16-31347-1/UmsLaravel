@@ -38,7 +38,8 @@ class LoginController extends Controller
 			$req->session()->put('username', $req->uname );
 			$req->session()->put('type', $result[0]->u_type );
 			
-			return redirect()->route('home.index');
+			//return redirect()->route('home.index');
+			return redirect()->route('portal.index');
 		}else{
 			$req->session()->flash('msg', "invalid username or password!");
 			

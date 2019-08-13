@@ -7,7 +7,7 @@ UMS-Login
 @section('menubar')
 <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/home">Home</a></li>
           <li><a href="examples.html">Examples</a></li>
           <li ><a href="/page/admin">A Page</a></li>
           <li><a href="another_page.html">Another Page</a></li>
@@ -23,9 +23,9 @@ UMS-Login
       </div>
       <div id="content">
         <!-- insert the page content here -->
-        <h1>login page</h1>
         
-      </div>
+        
+     
       
 
       <form method="post">
@@ -59,5 +59,5 @@ UMS-Login
 			</tr>
 		</table>
 	</form>
-	
+	 </div>
 	@endsection
